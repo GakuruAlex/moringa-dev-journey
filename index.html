@@ -11,7 +11,7 @@
 </head>
 <body id="mainContainer" >
 
-    <div id="menu">
+    <div id="menuContainer">
         <h1>Menu</h1>
 
         <div id="menuLeft">
@@ -19,22 +19,49 @@
             <h2>Today's Delicacy</h2>
 
             <table id="menuTable">
-                <th>
-                 <td>Quantity</td>
-                </th>
-                <th>
-                <td>Item</td>
-                </th>
-                <th>
-                <td>@</td>
-                </th>
                 <tr>
-                    <td>Standard</td>
-                    <td>French Fries</td>
-                    <td>ksh 100</td>
+                    <th>Quantity</th>
+                    <th>Item</th>
+                    <th>@</th>
                 </tr>
-                <tr> </tr>
-                <tr></tr>
+                <tr>
+                    <td>1</td>
+                    <td>French Fries</td>
+                    <td>Ksh.100</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sausage</td>
+                    <td>Ksh.40</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Smokie</td>
+                    <td>Ksh.35</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Kebabi</td>
+                    <td>Ksh.70</td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>300ml Coke</td>
+                    <td>Ksh.50</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Chicken Special</td>
+                    <td>Ksh.1400</td>
+                </tr>
+
+                <tr>
+
+                </tr>
+
+
+
             </table>
         </div>
 
@@ -42,17 +69,24 @@
             <h2>Make Your Order</h2>
             <ol>
                 <li>
-                    <button>French Fries plain</button>
+                    <button id="frenchFriesPlain" type="button" >French Fries plain</button>
                 </li>
                 <li>
-                    <button>French Fries + Salad</button>
+                    <button id="frenchFriesSalad" type="button" >French Fries + Salad</button>
                 </li>
                 <li>
-                    <button>French Fries + Tomato paste + Salad</button>
+                    <button id="frenchFriesSaladTmtSauce" type="button" >French Fries + Tomato sauce + Salad</button>
                 </li>
                 <li>
-                    <button>French Fries + Tomato paste + Salad + 300ml Coke</button>
+                    <button id="frenchFriesTomatopasteSalad300mlCoke" type="button" >French Fries + Tomato paste + Salad + 300ml Coke</button>
                 </li>
+                <li>
+                    <button id="chickenSpecial" type="button" >Chicken Special</button>
+                </li>
+                <li>
+                    <button id="chickenSpecialCoke" type="button" onclick="menuSelected" >Chicken Special + Coke</button>
+                </li>
+
             </ol>
         </div>
 

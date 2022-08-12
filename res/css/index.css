@@ -5,13 +5,13 @@
  }
 
 /* Menu div style */
-#menu{
+#menuContainer{
   background-color:#FF9800;;
   display: block;
   text-align: center;
   height: 400px;
 }
-#menu div{
+#menuContainer div{
   background-color: #009688;
 
 }
@@ -20,12 +20,21 @@
   width: 630px;
   height: 340px;
 
-  background-image: url("/moringa-dev-journey/res/images/frenchFries.jpg");
+  /*background-image: url("/moringa-dev-journey/res/images/frenchFries.jpg");*/
 
 }
-#menuTable{
-border: solid;
-width: fit-content;
+
+table, th, td {
+
+border: 1px  #FF9800 solid ;
+border-collapse: collapse;
+}
+
+th ,td {
+  background-color: #009688;
+}
+td{
+  width: 200px;
 }
 
 #menuRight{
@@ -34,7 +43,15 @@ width: fit-content;
   height: 340px;
   text-align: left;
 }
+#menuRight button{
+  background-color: #F57C00;
+  color: black;
 
+}
+
+#menuRight h2{
+  text-align: center;
+}
 /* Owed div style */
 #owed{
   background-color: #FF9800;
