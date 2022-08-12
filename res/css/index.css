@@ -46,6 +46,8 @@ td{
 #menuRight button{
   background-color: #F57C00;
   color: black;
+  width: 400px;
+  height: 25px;
 
 }
 

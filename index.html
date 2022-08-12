@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gakuru Dev Journey</title>
     <link rel="stylesheet" href="./res/css/index.css">
-    <link rel="stylesheet" href="./res/javascript/index.js">
+    <script src="./res/javascript/index.js"></script>
 
 </head>
-<body id="mainContainer" >
+<body id="mainContainer"  onLoad="addMenuListener();">
 
     <div id="menuContainer">
         <h1>Menu</h1>
@@ -78,13 +78,13 @@
                     <button id="frenchFriesSaladTmtSauce" type="button" >French Fries + Tomato sauce + Salad</button>
                 </li>
                 <li>
-                    <button id="frenchFriesTomatopasteSalad300mlCoke" type="button" >French Fries + Tomato paste + Salad + 300ml Coke</button>
+                    <button id="frenchFriesTomatopasteSalad300mlCoke" type="button" onclick="">French Fries + Tomato paste + Salad + 300ml Coke</button>
                 </li>
                 <li>
                     <button id="chickenSpecial" type="button" >Chicken Special</button>
                 </li>
                 <li>
-                    <button id="chickenSpecialCoke" type="button" onclick="menuSelected" >Chicken Special + Coke</button>
+                    <button id="chickenSpecialCoke" type="button" >Chicken Special + Coke</button>
                 </li>
 
             </ol>

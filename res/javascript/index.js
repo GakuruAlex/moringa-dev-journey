@@ -1,17 +1,14 @@
-const btn =document.querySelectorAll(`button`);
-
-const len= btn.length;
 
 
 
 const myMenu = {
-  frenchFriesPlain: "French Fries plain",
+  frenchFriesPlain: "French Fries ",
 
- frenchFriesSalad: "French Fries + Salad",
+ frenchFriesSalad: "French Fries with Salad",
 
- frenchFriesSaladTmtSauce: "French Fries + Tomato paste + Salad",
+ frenchFriesSaladTmtSauce: "French Fries with Tomato paste and Salad",
 
- frenchFriesTomatopasteSalad300mlCoke: "French Fries + Tomato paste + Salad + 300ml Coke ",
+ frenchFriesTomatopasteSalad300mlCoke: "French Fries , Tomato paste,  Salad and a 300ml Coke ",
 
  chickenSpecial: "Chicken Special",
 
@@ -21,13 +18,51 @@ const myMenu = {
 
 
 
-function menuSelected(){
+  function addMenuListener(){
+    const btn =document.querySelectorAll(`button`);
 
-  alert(`Button clicked`);
+    const lengthOfButtonsArray= btn.length;
 
-};
+    for(let i=0;i<lengthOfButtonsArray;i++){
 
-for(let i=0;i<len;i++){
-  btn[i].addEventListener('click',menuSelected);
+      btn[i].addEventListener('click',menuSelected);
 
-};
+
+  }
+
+
+  function menuSelected(e){
+
+      //get id of button clicked
+    let elemBtn = e.target.id;
+
+       if(elemBtn==="chickenSpecial"){
+
+        alert(`Menu selected is : ${myMenu["chickenSpecial"]}`);
+
+       }
+       else if(elemBtn==="frenchFriesPlain"){
+
+          alert(`Menu selected is ${myMenu["frenchFriesPlain"]}`);
+       }
+
+       else if(elemBtn==="frenchFriesSalad"){
+        alert(`Menu selected is ${myMenu["frenchFriesSalad"]}`);
+
+       }
+       else if(elemBtn==="frenchFriesTomatopasteSalad300mlCoke"){
+        alert(`Menu selected is ${myMenu["frenchFriesTomatopasteSalad300mlCoke"]}`);
+        //console.log(`Menu selected is ${myMenu["frenchFriesTomatopasteSalad300mlCoke"]}`);
+
+       }
+
+
+        else{
+          alert(`Clicked menu reserved for control protocal`);
+        }
+    }
+
+
+  }
+
+  addMenuListener()
